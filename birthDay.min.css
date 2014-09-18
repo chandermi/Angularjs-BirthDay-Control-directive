@@ -1,0 +1,34 @@
+.birthday-picker {
+    background: #f2f2f2;
+    padding: 5px;
+    width: 185px;
+}
+
+    .birthday-picker select {
+        border-radius: 4px  !important;
+        border-color: #dbdbde  !important;
+        background-image: none,linear-gradient(to bottom,rgba(255,255,255,.45) 0,rgba(255,255,255,0) 100%) !important;
+        background-position: 50% 50%  !important;
+        background-color: #f3f3f4  !important;
+        border-color: #dbdbde  !important;
+    }
+
+    .birthday-picker input {
+        
+        border-radius: 4px  !important;
+        border-color: #dbdbde  !important;
+        background-image: none,linear-gradient(to bottom,rgba(255,255,255,.45) 0,rgba(255,255,255,0) 100%) !important;
+        background-position: 50% 50%  !important;
+        background-color: #f3f3f4  !important;
+        border-color: #dbdbde  !important;
+    }
+
+.birth-day {
+    width: 45px !important;
+    margin: 2px;
+}
+
+.birth-year {
+    width: 60px !important;
+    margin: 2px;
+}
