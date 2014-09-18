@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<!-- define angular app -->
+<html ng-app="birtdayApp">
+
+<head>
+  <!-- SCROLLS -->
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+ <link rel="stylesheet" href="birthDay.min.css" />
+  <!-- SPELLS -->
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+  <script src="script.js"></script>
+  <script src="BirthdayDirective.js"></script>
+  
+</head>
+
+<!-- define angular controller -->
+<body ng-controller="mainController">
+
+ 
+
+  <div id="main">
+  
+    <!-- angular templating -->
+		<!-- this is where content will be injected -->
+    <div ng-view></div>
+    <div birth-day-picker birthday="birthdate" on-change="birthdatechange()"></div>
+	
+	<div>Your Birthday is  {{birthdate| date :'MM/dd/yyyy'}}</div>
+  </div>
+  
+  
+  
+</body>
+
+</html>
